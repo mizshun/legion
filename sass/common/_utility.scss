@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+//========================================
+//	@mixin定義
+//========================================
+
+// コンテンツ枠をつくる
+// @mixin makeContentCenter
+// @$width: コンテンツの横幅
+// @$bg:		背景
+@mixin makeContentCenter($width, $bg: transparent) {
+	width: $width;
+	margin: 0 auto;
+	background: $bg;
+}
+
+// カラムをつくる
+// @mixin makeColumn
+// @width:	カラムを入れる親要素の幅
+// @count:	カラムの数
+// @gutter: カラム間の余白
+@mixin makeColumn($width, $count, $gutter) {
+	float: left;
+	width: _calcColumnWidth($width, $count, $gutter);
+	margin-left: percentage($gutter / $width);
+	&:nth-of-type(#{$count}n + 1) {
+		margin-left: 0;
+	}
+}
+@function _calcColumnWidth($width, $count, $gutter) {
+		$resWidth: ($width - ($gutter * ($count - 1))) / $count;
+		$resWidth: percentage($resWidth / $width);
+		@return $resWidth;
+}

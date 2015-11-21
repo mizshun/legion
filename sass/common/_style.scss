@@ -1,0 +1,74 @@
+@charset "utf-8";
+/*========================================
+
+========================================*/
+html {
+	background: darken($baseBgColor, 12%);
+}
+
+body {
+	font-family: $baseFontFamily;
+	font-size: $baseFontSize;
+	color: $baseFontColor;
+	line-height: $baseLineHeight;
+	background: darken($baseBgColor, 12%);
+	background: -webkit-linear-gradient(top, $baseBgColor, darken($baseBgColor, 12%));
+	background:    -moz-linear-gradient(top, $baseBgColor, darken($baseBgColor, 12%));
+	background:     -ms-linear-gradient(top, $baseBgColor, darken($baseBgColor, 12%));
+	background:         linear-gradient(to bottom, $baseBgColor, darken($baseBgColor, 12%));
+}
+
+h1 {
+	font-family: 'Audiowide', sans-serif;
+	font-size: 228.5714%;
+	color: #940303;
+	font-style: italic;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	@include text-shadow(0px 1px 0px #C47E7E, 0px -1px 0px #500C0C);
+}
+
+h2 {
+	margin-bottom: 4px;
+	font-size: 71.42857%;
+	color: #fff;
+	font-weight: normal;
+	letter-spacing: 0.2em;
+	@include text-shadow(0px 1px 1px rgba(0, 0, 0, 1));
+}
+
+h3 {
+	font-size: 120%;
+}
+
+h4 {
+	font-size: 120%;
+}
+
+h5 {
+	font-size: 100%;
+}
+
+h6 {
+	font-size: 100%;
+}
+
+a {
+	color: $baseLink;
+	&:visited {
+		color: $baseLinkV;
+	}
+	&:hover {
+		color: $baseLinkH;
+	}
+	&:active {
+		color: $baseLinkA;
+	}
+}
+
+::selection {
+	background: #ffb7b7;
+	}
+::-moz-selection {
+	background: #ffb7b7;
+}

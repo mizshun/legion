@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+// HTML5 or XHTML
+$useHTML5: true;
+
+// パス
+$imgPath: "../img/"; // 画像パス
+
+// レイアウト
+$baseWidth: 800px; // ページの横幅
+$baseSpace: 16px; // スペース
+$baseSpaceS: $baseSpace / 2; // スペース
+
+// 画面カラー
+$baseBgColor: #fff; // ベースカラー
+$subBgColor : #a01616; // サブカラー
+$subBgColorDark : #831212; // 濃いサブカラーバリエーション
+$subBgColorDarkest : #680C0C; // 一番濃いサブカラーバリエーション
+$keyBgColor : #f06; // アクセントカラー
+$textareaBgColor: #fff;
+
+// テキスト
+$baseFontFamily: "ヒラギノ角ゴ Pro W3", Meiryo, "メイリオ", sans-serif; // font-family
+$baseFontSize: 14px; // フォントサイズ
+$baseFontColor: #333; // フォントカラー
+$baseLineHeight: 1.5; // 行間
+
+$highlightFontColor: #fc0; // 強調カラー
+
+$baseLink : #000; // リンクカラー
+$baseLinkV: #666; // 同ヴィジテッド
+$baseLinkH: #aaa; // 同ホバー
+$baseLinkA: #eee; // 同アクティブ
